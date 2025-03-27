@@ -2,13 +2,16 @@
 
 This repo contains the corpus used in this [paper](https://hal.science/hal-04452082).
 The original target task is the detection of contract calendar in public procurement documents. 
-The corpus here is used for the training of NER tagger.
+The corpus here is used for the training of NER tagger and calendar extraction pipe.
 
 # File description
-4 subcorpus are available in `.json` format, with 3 fields:
+4 subcorpora are available in `.json` format, with 3 fields:
 1. `id`: id of the paragraph
 2. `token`: list of token-label pairs
 3. `txt`: full text 
+
+The `OM-renewal-2015-22` and `OM-renewal-2011` corpora are annotated with one additional field:
+4. `calendar`: full calendar of the contract as indicated in the text
 
 Repo inventory:
 - `./OM-renewal-2015-22-strat/`: the Octo-2015/22 sub corpus split in 10 stratified folds.
